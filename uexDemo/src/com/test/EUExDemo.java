@@ -5,7 +5,6 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Vibrator;
-import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -244,7 +243,6 @@ public class EUExDemo extends EUExBase {
             lp.topMargin = mAddFragmentData.getTop();
             addFragmentToCurrentWindow(mAddFragmentView, lp, TAG);
         }
-
     }
 
     // this case remove a custom view from window

@@ -37,7 +37,7 @@ repositories {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     lintOptions {
         abortOnError false
     }
@@ -47,7 +47,7 @@ android {
     }
     defaultConfig {
         targetSdkVersion 28
-        minSdkVersion 18
+        minSdkVersion 22
         applicationId 'org.zywx.wbpalmstar.widgetone.uexDemo'
         multiDexEnabled true
     }
@@ -62,15 +62,6 @@ android {
             assets.srcDirs = ['assets']
             jniLibs.srcDirs = ['libs']
         }
-
-        // Move the build types to build-types/<type>
-        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
-        // This moves them out of them default location under src/<type>/... which would
-        // conflict with src/ being used by the main source set.
-        // Adding new build types or product flavors should be accompanied
-        // by a similar customization.
-        debug.setRoot('build-types/debug')
-        release.setRoot('build-types/release')
     }
     productFlavors {
     }
